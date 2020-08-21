@@ -1,0 +1,39 @@
+version: '3'
+services:
+
+  #
+  # Application
+  #
+
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: api
+    command: sh -c "npm i && npm run start:debug"
+    ports:
+      - '${API_PORT_EXT:-3000}:3000'
+      - '${API_PORT_DEBUG:-9229}:9229'
+    environment:
+      - DEBUG_PORT=9229
+    volumes:
+      - ./:/app:cached
+      # special for MacOs users
+      - /node_modules
+    env_file:
+      - .env
+
+  #
+  # Services
+  #
+
+  redis:
+    image: redis:4.0-alpine
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - '${REDIS_PORT_EXT:-6379}:6379'
+    volumes:
+      - './volumes/redis_data:/data'
