@@ -390,139 +390,139 @@ export const configInstance: Config = {
     {
       id: 48,
       questionSite: publicTruthText,
-      questionChat: `Питання: За який вчинок тобі найбільше соромно? Дія: Зроби масаж голови будь-кому з учасників. `,
+      questionChat: `Питання: За який вчинок тобі найбільше соромно?\nДія: Зроби масаж голови будь-кому з учасників. `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 49,
       questionSite: publicTruthText,
-      questionChat: `Питання: Кого з присутніх ти б взяв/ла з собою на безлюдний острів? Дія: Візьми в гравця ліворуч будь-який предмет одягу й одягни на себе. `,
+      questionChat: `Питання: Кого з присутніх ти б взяв/ла з собою на безлюдний острів?\nДія: Візьми в гравця ліворуч будь-який предмет одягу й одягни на себе. `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 50,
       questionSite: publicTruthText,
-      questionChat: `Питання: З ким і як відбувся твій перший поцілунок? Дія: Винеси сміття просто зараз. `,
+      questionChat: `Питання: З ким і як відбувся твій перший поцілунок?\nДія: Винеси сміття просто зараз. `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 51,
       questionSite: publicTruthText,
-      questionChat: `Питання: Що тебе дратує в найкращій подрузі? Дія: Сядь на коліна будь-кому з компанії.  `,
+      questionChat: `Питання: Що тебе дратує в найкращій подрузі?\nДія: Сядь на коліна будь-кому з компанії.  `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 52,
       questionSite: publicTruthText,
-      questionChat: `Питання: Кого з присутніх ти вважаєш найпривабливішим? Дія: Намалюй собі вуса зубною пастою.`,
+      questionChat: `Питання: Кого з присутніх ти вважаєш найпривабливішим?\nДія: Намалюй собі вуса зубною пастою.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 53,
       questionSite: publicTruthText,
-      questionChat: `Питання: Яке було найгірше побачення у твоєму житті? Дія: Спародіюй будь-кого з присутніх.`,
+      questionChat: `Питання: Яке було найгірше побачення у твоєму житті?\nДія: Спародіюй будь-кого з присутніх.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 54,
       questionSite: publicTruthText,
-      questionChat: `Питання: Кого з присутніх ти б рятував/ла останнім під час катастрофи? Дія: Стрибай на одній нозі, співаючи «Охрана, отмєна».`,
+      questionChat: `Питання: Кого з присутніх ти б рятував/ла останнім під час катастрофи?\nДія: Стрибай на одній нозі, співаючи «Охрана, отмєна».`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 55,
       questionSite: publicTruthText,
-      questionChat: `Питання: Що тобі найбільше подобається в собі? Дія: Прочитай уголос останнє SMS-повідомлення.`,
+      questionChat: `Питання: Що тобі найбільше подобається в собі?\nДія: Прочитай уголос останнє SMS-повідомлення.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 56,
       questionSite: publicTruthText,
-      questionChat: ` Питання: Яка твоя найзаповітніша мрія? Дія: Надкуси цілу цибулину, лимон або перець чилі.`,
+      questionChat: ` Питання: Яка твоя найзаповітніша мрія?\nДія: Надкуси цілу цибулину, лимон або перець чилі.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 57,
       questionSite: publicTruthText,
-      questionChat: `Питання: Спиш або ходиш по дому голяка? Дія: Зображуй мавпочку протягом 5 хвилин.`,
+      questionChat: `Питання: Спиш або ходиш по дому голяка?\nДія: Зображуй мавпочку протягом 5 хвилин.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 58,
       questionSite: publicTruthText,
-      questionChat: `Питання: Розкажи про своє перше побачення. Дія: Станцюй тверк просто зараз.`,
+      questionChat: `Питання: Розкажи про своє перше побачення.\nДія: Станцюй тверк просто зараз.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 59,
       questionSite: publicTruthText,
-      questionChat: `Питання: Яке було твоє перше враження про людину ліворуч від тебе? Дія: Придумай кожному з присутніх прізвисько, яке його характеризує.`,
+      questionChat: `Питання: Яке було твоє перше враження про людину ліворуч від тебе?\nДія: Придумай кожному з присутніх прізвисько, яке його характеризує.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 60,
       questionSite: publicTruthText,
-      questionChat: `Питання: Яка риса тебе найбільше бісить у людях? Дія: Вхопи людину праворуч за ніс.`,
+      questionChat: `Питання: Яка риса тебе найбільше бісить у людях?\nДія: Вхопи людину праворуч за ніс.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 61,
       questionSite: publicTruthText,
-      questionChat: `Питання: З ким із присутніх ти б хотів/ла залишитися сам на сам? Дія: Поцілуй руку людині ліворуч.`,
+      questionChat: `Питання: З ким із присутніх ти б хотів/ла залишитися сам на сам?\nДія: Поцілуй руку людині ліворуч.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 62,
       questionSite: publicTruthText,
-      questionChat: `Питання: Який твій найбезглуздіший вчинок? Дія: Вкуси себе або будь-кого з присутніх за ногу.`,
+      questionChat: `Питання: Який твій найбезглуздіший вчинок?\nДія: Вкуси себе або будь-кого з присутніх за ногу.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 63,
       questionSite: publicTruthText,
-      questionChat: `Питання: Яка твоя найтемніша потаємна фантазія? Дія: Вдягни весь свій одяг навиворіт і не перевдягайся до кінця гри.  `,
+      questionChat: `Питання: Яка твоя найтемніша потаємна фантазія?\nДія: Вдягни весь свій одяг навиворіт і не перевдягайся до кінця гри.  `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },{
       id: 64,
       questionSite: publicTruthText,
-      questionChat: `Питання: Розкажи смішну історію зі свого минулого.  Дія: Станцюй танго з будь-ким із присутніх.  `,
+      questionChat: `Питання: Розкажи смішну історію зі свого минулого. \nДія: Станцюй танго з будь-ким із присутніх.  `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 65,
       questionSite: publicTruthText,
-      questionChat: `Питання: Ти коли-небудь цілувався/лась з людиною своєї статі?  Дія: Прочитай уголос переписку з будь-ким із присутніх.`,
+      questionChat: `Питання: Ти коли-небудь цілувався/лась з людиною своєї статі? \nДія: Прочитай уголос переписку з будь-ким із присутніх.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 66,
       questionSite: publicTruthText,
-      questionChat: ` Питання: Як би ти витратив/ла мільйон доларів?  Дія: Голосно гавкай у відчинене вікно протягом хвилини.  `,
+      questionChat: ` Питання: Як би ти витратив/ла мільйон доларів? \nДія: Голосно гавкай у відчинене вікно протягом хвилини.  `,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
     {
       id: 67,
       questionSite: publicTruthText,
-      questionChat: `Питання: Назви 3 речі, у любові до яких тобі соромно зізнатись.  Дія: Покажи всім присутнім 10 останніх фото на твоєму телефоні.`,
+      questionChat: `Питання: Назви 3 речі, у любові до яких тобі соромно зізнатись. \nДія: Покажи всім присутнім 10 останніх фото на твоєму телефоні.`,
       category: QuestionCategoryEnum.CATEGORY_4,
       used: false,
     },
