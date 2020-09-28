@@ -15,7 +15,6 @@ export class PromoCodeService {
 
     await this.cacheService.set(code, code, this.config.promoCodeLiveTime);
 
-    console.log(code);
     return code;
   }
 

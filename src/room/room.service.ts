@@ -1,7 +1,7 @@
 import {Injectable} from '@nestjs/common';
 import {CorizoidService} from '../services/corizoid/corizoid.service';
-import {Room, RoomQuestion, RoomStatusEnum} from "../types";
-import {Config} from "../core/config";
+import {QuestionCategoryEnum, Room, RoomQuestion, RoomStatusEnum} from "../types";
+import {Config, configInstance} from "../core/config";
 import {NextQuestionDto} from "./dto/next-question.dto";
 import {GetQuestionByIdDto} from "./dto/get-question-by-id.dto";
 
@@ -27,8 +27,14 @@ export class RoomService {
       id,
       currentQuestion: null,
       previousQuestion: null,
+      currentQuestions: {
+        [QuestionCategoryEnum.CATEGORY_1]: null,
+        [QuestionCategoryEnum.CATEGORY_2]: null,
+        [QuestionCategoryEnum.CATEGORY_3]: null,
+        [QuestionCategoryEnum.CATEGORY_4]: null,
+      },
       status: RoomStatusEnum.WAIT_FOR_START,
-      questions: this.config.questions,
+      questions: this.config.questions.map(i => ({ ...i })),
     }
   }
 
@@ -49,7 +55,6 @@ export class RoomService {
       const index = this.rooms[id - 1].questions.findIndex(item => item.id === currentQuestion);
 
       this.rooms[id - 1].questions[index].used = true;
-
     }
 
     const categoryQuestions = this.rooms[id - 1].questions.filter(item => item.category === category);
@@ -66,6 +71,12 @@ export class RoomService {
 
       this.rooms[id - 1].currentQuestion = question.id;
 
+      this.rooms[id - 1].currentQuestions[category] = {
+        ...question,
+        used: unUsedQuestions.length === 1 ? true : question.used,
+        last: unUsedQuestions.length === 1,
+      };
+
       return {
         ...question,
         last: unUsedQuestions.length === 1,
@@ -80,7 +91,6 @@ export class RoomService {
 
   resetRoom(id: number): void {
     this.rooms[id - 1] = this.setUpRoom(id);
-    console.log(this.rooms[id - 1]);
   }
 
   private static findRandomQuestion(arr: RoomQuestion[]): RoomQuestion {

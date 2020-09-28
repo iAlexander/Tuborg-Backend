@@ -33,9 +33,13 @@ export class AuthGuard implements CanActivate {
 
       const roles = this.reflector.get<string[]>('roles', context.getHandler());
 
+      if (!roles) {
+        return true;
+      }
+
       const roleTokens = roles.map(i => RolesTokens[Roles[i]]);
 
-      if (!roleTokens.includes(token) && roles.length > 0) {
+      if (!roleTokens.includes(token)) {
         throw new Error('role error');
       }
 

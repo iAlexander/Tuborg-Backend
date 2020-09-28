@@ -38,15 +38,10 @@ export class RoomController {
     })
     getRoom(@Param() { id }: IdParamsDto): Response {
         const room = this.roomService.getRoomById(id);
-        const question = this.roomService.getRoomQuestionById({
-            id,
-            questionId: room.currentQuestion
-        });
 
         return Response.ok({
             ...room,
             questions: undefined,
-            currentQuestion: question || null,
         });
     }
 

@@ -13,11 +13,10 @@ export class PromoCodeController {
     private promoCodeService: PromoCodeService,
   ) {}
 
-  @RoleDecorator(Roles.front)
+  @RoleDecorator(Roles.corizoid)
   @Get('/generate')
   async generate(): Promise<Response> {
     const code = await this.promoCodeService.generate();
-    console.log(code)
     return Response.ok(code);
   }
 

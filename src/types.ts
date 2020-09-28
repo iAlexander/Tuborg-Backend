@@ -53,10 +53,21 @@ export interface RoomQuestion {
   used: boolean;
 }
 
+export interface RoomWithLast extends RoomQuestion {
+  last: boolean;
+}
+
 export class Room {
   id: number;
   currentQuestion: number | null;
   previousQuestion: number | null;
+  currentQuestions: {
+    [QuestionCategoryEnum.CATEGORY_1]: null | RoomWithLast;
+    [QuestionCategoryEnum.CATEGORY_2]: null | RoomWithLast;
+    [QuestionCategoryEnum.CATEGORY_3]: null | RoomWithLast;
+    [QuestionCategoryEnum.CATEGORY_4]: null | RoomWithLast;
+  };
   status: RoomStatusEnum;
   questions: RoomQuestion[];
 }
+

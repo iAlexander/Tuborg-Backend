@@ -6,7 +6,7 @@ import * as Redis from 'ioredis';
 const customProviders = [
   {
     provide: Config,
-    useValue: configInstance,
+    useValue: { ...configInstance },
   },
   {
     provide: 'Redis',
