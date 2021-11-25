@@ -2,8 +2,8 @@ import 'dotenv/config';
 import {QuestionCategoryEnum, RoomQuestion} from "../types";
 
 export enum RolesTokens {
-  front = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcm9udCI6dHJ1ZX0.PGvYqU8t5D1iyOnMNmbGq2sisKtHez1arXLN5eXl4NU',
-  corizoid = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3Jpem9pZCI6dHJ1ZX0.ak3lllvOsDJIndsNzRIAtCCN_mPoS8p8xvcfZ_u40Fk',
+  front = 'i13.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcm9udCI6dHJ1ZX0.PGvYqU8t5D1iyOnMNmbGq2sisKtHez1arXLN5eXl4NU',
+  corizoid = 'i13.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3Jpem9pZCI6dHJ1ZX0.ak3lllvOsDJIndsNzRIAtCCN_mPoS8p8xvcfZ_u40Fk',
 }
 
 export enum Roles {
@@ -41,8 +41,8 @@ export const configInstance: Config = {
   },
   port: parseInt(process.env.API_PORT_EXT || '3000', 10),
   promoCodeLiveTime: 129600000, // 36h in ms
-  frontToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcm9udCI6dHJ1ZX0.PGvYqU8t5D1iyOnMNmbGq2sisKtHez1arXLN5eXl4NU',
-  corizoidToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3Jpem9pZCI6dHJ1ZX0.ak3lllvOsDJIndsNzRIAtCCN_mPoS8p8xvcfZ_u40Fk',
+  frontToken: 'i13.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcm9udCI6dHJ1ZX0.PGvYqU8t5D1iyOnMNmbGq2sisKtHez1arXLN5eXl4NU',
+  corizoidToken: 'i13.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb3Jpem9pZCI6dHJ1ZX0.ak3lllvOsDJIndsNzRIAtCCN_mPoS8p8xvcfZ_u40Fk',
   unprotectedRoutes: [],
   logger: {
     name: 'Debug logs',
